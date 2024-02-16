@@ -23,7 +23,7 @@ function btn_fem(){
     
     masculino.style.background='rgba(0, 255, 255, 0.096)'
     masculino.style.color='rgba(0, 0, 0, 0.582)'
-    sexo='feminino'
+    sexo = 'feminino'
 }
 
 function calcular(){
@@ -37,7 +37,7 @@ function calcular(){
         window.alert('Preencha os campos para prosseguir')
     }else if(altura<1.20 || peso<20){
         window.alert('Os valores inseridos são muito baixos')
-    }else if(sexo =''){
+    }else if(sexo ==''){
         window.alert('Escolha o seu sexo')
     }else{
         imc.push(sexo)
