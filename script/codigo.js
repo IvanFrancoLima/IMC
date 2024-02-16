@@ -1,3 +1,4 @@
+var inicio = window.document.querySelector('a#inicio')
 var masculino = window.document.querySelector('input#masculino')
 var feminino = window.document.querySelector('input#feminino')
 var calculo = window.document.querySelector('input#btn_calcular')
@@ -7,6 +8,15 @@ var sexo = ''
 masculino.addEventListener('click',btn_masc)
 feminino.addEventListener('click',btn_fem)
 calculo.addEventListener('click',calcular)
+inicio.addEventListener('click',iniciar)
+
+function iniciar(){
+    let resultado = window.document.querySelector('section#resultado')
+    let formulario = window.document.querySelector('section#calculo')
+
+    formulario.style.display='block'
+    resultado.style.display='none'
+}
 
 function btn_masc(){
     masculino.style.background='cyan'

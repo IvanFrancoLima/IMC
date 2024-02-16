@@ -95,6 +95,7 @@ section#resultado{
 }
 
 #msg{
+    text-align: justify;
     padding-bottom: 1em;
     line-height: 1.5em;
 }
