@@ -40,7 +40,7 @@ section#aliments a{
 
 section#calculo{
     height: 60vh;
-    margin: 5px 2px;
+    margin: 1px;
     border: 1px solid aqua;
     padding: 1em 5px;
 }
@@ -60,6 +60,7 @@ section#calculo{
 #calculo input.botoes{
     display: inline;
     border: none;
+    border-radius: 2px;
     cursor: pointer;
     padding: 10px;
     width: 49%;
@@ -88,7 +89,13 @@ input#btn_calcular{
 }
 
 section#resultado{
+    display: none;
     padding: 1em 5px;
+}
+
+#msg{
+    padding-bottom: 1em;
+    line-height: 1.5em;
 }
 
 table{
