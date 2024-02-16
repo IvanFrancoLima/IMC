@@ -32,6 +32,7 @@ section#aliments{
 section#aliments a{ 
    padding: 1em;
    border-radius: 5px;
+   font-size: 1.4em;
    font-family: action;
    text-decoration: none;
    background-color: rgba(145, 96, 96, 0.801);
