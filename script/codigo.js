@@ -45,7 +45,7 @@ function calcular(){
         formulario.style.display='none'
         resultado.style.display='block'
 
-        if(sexo =='masculino'){
+        if(imc[0] =='masculino'){
             if (imc[1]<18.5){
                 msg.innerHTML = `Calculamos o seu IMC que resultou em ${imc[1].toFixed(2)}  e infelizmente você é um homem que está <strong>abaixo</strong> do seu peso ideal`
             }else if(imc[1]<24.99){
