@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de massa corporal</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <section id="aliments">
+        <a href="#calculo" hreflang="pt-br" target="_self" rel="next"><strong>Calcule o seu IMC</strong></a>
+    </section>
+    <main>
+        <section id="calculo">
+            <form action="" method="get">
+                <label for="sexo">Sexo:</label>
+                <input type="button" value="Masculino" id="masculino" class="botoes">
+                <input type="button" value="Feminino" id="feminino" class="botoes">
+            
+                <label for="peso">Digite seu peso: </label>
+                <input type="number" name="peso_" id="peso">
+                <label for="altura">Digite sua altura: </label>
+                <input type="number" name="altura_" id="altura" placeholder="ex:1.78">
+
+                <input type="button" value="Calcular" id="btn_calcular">
+            </form>
+        </section>
+
+        <section id="resultado">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Valor do IMC</th>
+                        <th>Classificação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menor que 18,5</td>
+                        <td>Baixo Peso</td>
+                    </tr>
+                    <tr>
+                        <td>De 18,5 a 24,99</td>
+                        <td>Peso Normal</td>
+                    </tr>
+                    <tr>
+                        <td>De 25 a 29,99</td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>Maior que 30</td>
+                        <td>Obesidade</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script/codigo.js"></script>
+</body>
+</html>

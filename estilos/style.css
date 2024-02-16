@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@font-face {
+    font-family: action;
+    src: url(fonts/ProtestRiot-Regular.ttf);
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+   height: 100vh;
+   width: 100vw;
+}
+
+section#aliments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black url(../imagens/background-image.jpeg) no-repeat center/cover fixed;
+    height: 100vh;
+}
+
+section#aliments a{ 
+   padding: 1em;
+   border-radius: 5px;
+   font-family: action;
+   text-decoration: none;
+   background-color: rgba(145, 96, 96, 0.801);
+   color: white;
+}
+
+section#calculo{
+    height: 60vh;
+    margin: 5px 2px;
+    border: 1px solid aqua;
+    padding: 1em 5px;
+}
+
+#calculo label, input{
+    display: block;
+}
+
+#calculo label{
+    margin: 25px 0 10px 0;
+}
+
+#calculo input{
+    padding: 5px 0;
+}
+
+#calculo input.botoes{
+    display: inline;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 49%;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+#calculo input#masculino{
+    background-color: rgba(0, 255, 255, 0.096);
+    border: 1px solid aquamarine;
+}
+
+#calculo input#feminino{
+    background-color: rgba(255, 30, 0, 0.096);
+    border: 1px solid rgb(255, 168, 127);
+}
+
+input#btn_calcular{
+    cursor: pointer;
+    width: 100%; 
+    padding: 1em; 
+    margin-top: 1em;
+    border: none; 
+    border-radius: 5px;
+    background-color: rgb(65, 189, 189); 
+    color: white; 
+}
+
+section#resultado{
+    
+}
+
+table{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th,td{
+    padding: 10px;
+    border: 1px solid black;
+}
