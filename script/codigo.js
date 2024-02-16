@@ -37,9 +37,11 @@ function calcular(){
         window.alert('Preencha os campos para prosseguir')
     }else if(altura<1.20 || peso<20){
         window.alert('Os valores inseridos são muito baixos')
+    }else if(sexo =''){
+        window.alert('Escolha o seu sexo')
     }else{
         imc.push(sexo)
-        imc.push(peso/(altura**altura))
+        imc.push(peso/(altura*altura))
         formulario.style.display='none'
         resultado.style.display='block'
 
@@ -53,7 +55,16 @@ function calcular(){
             }else{
                 msg.innerHTML = `Calculamos o seu IMC que resultou em ${imc[1].toFixed(2)}  e infelizmente você é um homem que está <strong>Obeso</strong>`
             }
-        }
-        
+        }else{
+            if (imc[1]<18.5){
+                msg.innerHTML = `Calculamos o seu IMC que resultou em ${imc[1].toFixed(2)}  e infelizmente você é uma mulher que está <strong>abaixo</strong> do seu peso ideal`
+            }else if(imc[1]<24.99){
+                msg.innerHTML = `Calculamos o seu IMC que resultou em ${imc[1].toFixed(2)}  e felizmente você é uma mulher que está no peso <strong>ideal</strong>`
+            }else if(imc[1]<29.99){
+                msg.innerHTML = `Calculamos o seu IMC que resultou em ${imc[1].toFixed(2)}  e infelizmente você é uma mulher que está com <strong>sobrepeso</strong>`
+            }else{
+                msg.innerHTML = `Calculamos o seu IMC que resultou em ${imc[1].toFixed(2)}  e infelizmente você é uma mulher que está <strong>Obeso</strong>`
+            }
+        }       
     }
 }
