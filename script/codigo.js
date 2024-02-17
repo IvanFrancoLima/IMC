@@ -13,6 +13,13 @@ inicio.addEventListener('click',iniciar)
 function iniciar(){
     let resultado = window.document.querySelector('section#resultado')
     let formulario = window.document.querySelector('section#calculo')
+    sexo = ''
+    imc = []
+
+    feminino.style.background ='rgba(255, 30, 0, 0.096)'
+    color='rgba(0, 0, 0, 0.582)'
+    masculino.style.background='rgba(0, 255, 255, 0.096)'
+    masculino.style.color='rgba(0, 0, 0, 0.582)'
 
     formulario.style.display='block'
     resultado.style.display='none'
